@@ -892,18 +892,18 @@ section { padding: 140px 48px; position: relative; }
 }
 .timeline {
   position: relative;
-  padding-left: 40px;
+  padding-left: 44px;
 }
 .timeline::before {
   content: '';
   position: absolute;
-  left: 0; top: 0; bottom: 0;
+  left: 21px; top: 0; bottom: 0;
   width: 1px;
   background: var(--border);
 }
 .timeline-progress {
   position: absolute;
-  left: 0; top: 0;
+  left: 21px; top: 0;
   width: 2px;
   background: linear-gradient(var(--blue), var(--cyan));
   height: 0;
@@ -911,17 +911,15 @@ section { padding: 140px 48px; position: relative; }
 }
 .timeline-item {
   position: relative;
-  padding: 0 0 72px 40px;
-  opacity: 0;
-  transform: translateX(-30px);
+  padding: 0 0 72px 44px;
 }
 .timeline-dot {
   position: absolute;
-  left: -45px; top: 6px;
-  width: 12px; height: 12px;
+  left: -29px; top: 4px;
+  width: 14px; height: 14px;
   background: var(--blue);
   border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--surface), 0 0 0 5px var(--border), 0 0 12px rgba(0, 102, 255, 0.3);
+  box-shadow: 0 0 0 4px var(--surface), 0 0 0 5px var(--border), 0 0 14px rgba(0, 102, 255, 0.3);
 }
 .timeline-meta {
   display: flex;
@@ -1391,6 +1389,10 @@ footer span { color: var(--blue); }
   .experience-layout { grid-template-columns: 1fr; gap: 48px; }
   .exp-sidebar { position: static; }
   .exp-sidebar-card { border-color: transparent; background: rgba(0, 102, 255, 0.02); }
+  .timeline { padding-left: 36px; }
+  .timeline::before, .timeline-progress { left: 17px; }
+  .timeline-item { padding: 0 0 72px 36px; }
+  .timeline-dot { left: -22px; }
   html, body { overflow-x: hidden; position: relative; }
   .bg-blob-svg { display: none; }
   .bg-dot { animation: none; opacity: 0.08; }
