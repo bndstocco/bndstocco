@@ -41,9 +41,8 @@ const flags = {
   ),
   'es-ES': (
     <svg viewBox="0 0 36 25" width="28" height="20">
-      <rect width="36" height="25" fill="#C60B1E" rx="2"/>
-      <rect y="6" width="36" height="13" fill="#FFC400"/>
-      <rect x="15" y="9" width="6" height="7" fill="#C60B1E" rx="1"/>
+      <rect width="36" height="25" fill="#AA1515" rx="2"/>
+      <rect y="6" width="36" height="13" fill="#F1BF00"/>
     </svg>
   ),
 };
