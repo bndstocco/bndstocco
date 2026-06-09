@@ -151,8 +151,8 @@ export const CONTACT = {
   tag: '05 — Contato',
   title: 'Vamos\nconstruir\nalgo.',
   links: [
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/bernardostoccosilva', icon: 'linkedin', handle: '@bernardostoccosilva' },
-    { label: 'E-mail', href: 'mailto:bernardo@email.com', icon: 'email', handle: 'bernardo@email.com' },
-    { label: 'GitHub', href: 'https://github.com', icon: 'github', handle: '@bernardostocco' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/bndstocco/', icon: 'linkedin', handle: '@bndstocco' },
+    { label: 'E-mail', href: 'mailto:bernardostoccobnd@gmail.com', icon: 'email', handle: 'bernardostoccobnd@gmail.com' },
+    { label: 'GitHub', href: 'https://github.com/bndstocco', icon: 'github', handle: '@bndstocco' },
   ],
 };
