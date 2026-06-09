@@ -1392,7 +1392,7 @@ footer span { color: var(--blue); }
   .timeline { padding-left: 36px; }
   .timeline::before, .timeline-progress { left: 17px; }
   .timeline-item { padding: 0 0 72px 36px; }
-  .timeline-dot { left: -22px; }
+  .timeline-dot { left: -26px; }
   html, body { overflow-x: hidden; position: relative; }
   .bg-blob-svg { display: none; }
   .bg-dot { animation: none; opacity: 0.08; }
