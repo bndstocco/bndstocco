@@ -524,6 +524,9 @@ nav { transition: background .3s, border-color .3s, backdrop-filter .3s; }
 }
 .hero-name .line { display: block; }
 .hero-name .accent { background: linear-gradient(135deg, var(--blue), var(--cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.typing-cursor { display: inline-block; animation: cursor-blink 0.8s step-end infinite; }
+@keyframes cursor-blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
 .hero-role {
   font-family: var(--display);
   font-size: clamp(18px, 2.5vw, 28px);

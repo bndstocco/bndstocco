@@ -8,6 +8,7 @@ const contactLinks = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/bndstocco/', icon: 'linkedin', handle: '@bndstocco' },
   { label: 'E-mail', href: 'mailto:bernardostoccobnd@gmail.com', icon: 'email', handle: 'bernardostoccobnd@gmail.com' },
   { label: 'GitHub', href: 'https://github.com/bndstocco', icon: 'github', handle: '@bndstocco' },
+  { label: 'Behance', href: 'https://www.behance.net/bndstocco', icon: 'behance', handle: '@bndstocco' },
 ];
 
 export default function Contact() {

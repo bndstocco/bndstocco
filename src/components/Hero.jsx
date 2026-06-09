@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { useLanguage } from '../contexts/LanguageContext';
 import { HexIcon } from '../data/icons.jsx';
@@ -12,6 +12,30 @@ export default function Hero() {
   const eyebrowRef = useRef(null);
   const { t } = useLanguage();
   const hero = t.hero;
+
+  const prefix = `${hero.name[0]} ${hero.name[1]} `;
+  const surname = hero.name[2];
+  const fullName = prefix + surname;
+  const splitIndex = prefix.length;
+  const [displayedName, setDisplayedName] = useState('');
+  const [typingDone, setTypingDone] = useState(false);
+
+  useEffect(() => {
+    const delay = setTimeout(() => {
+      let i = 0;
+      const interval = setInterval(() => {
+        if (i <= fullName.length) {
+          setDisplayedName(fullName.slice(0, i));
+          i++;
+        } else {
+          clearInterval(interval);
+          setTypingDone(true);
+        }
+      }, 60);
+      return () => clearInterval(interval);
+    }, 300);
+    return () => clearTimeout(delay);
+  }, [fullName]);
 
   useEffect(() => {
     const isMobile = window.innerWidth < 900 || window.matchMedia('(pointer: coarse)').matches;
@@ -121,10 +145,15 @@ export default function Hero() {
 
         <h1 className="hero-name">
           <span className="line" ref={(el) => (linesRef.current[0] = el)}>
-            {hero.name[0]} {hero.name[1]}
-          </span>
-          <span className="line" ref={(el) => (linesRef.current[1] = el)}>
-            <span className="accent">{hero.name[2]}</span>
+            {displayedName.length <= splitIndex ? (
+              displayedName
+            ) : (
+              <>
+                {prefix}
+                <span className="accent">{displayedName.slice(splitIndex)}</span>
+              </>
+            )}
+            {!typingDone && <span className="typing-cursor">|</span>}
           </span>
         </h1>
 

@@ -16,7 +16,7 @@ const ptBR = {
     stats: [
       { num: '3', suffix: '+', label: 'Anos de exp.' },
       { num: '40', suffix: '+', label: 'Certificações' },
-      { num: '15', suffix: '+', label: 'Websites feitos' },
+      { num: '15', suffix: '+', label: 'Projetos concluídos' },
     ],
     cta1: 'Ver experiência',
     cta2: 'Entrar em contato',
