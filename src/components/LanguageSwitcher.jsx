@@ -4,9 +4,13 @@ const flags = {
   'pt-BR': (
     <svg viewBox="0 0 36 36" width="20" height="20">
       <rect width="36" height="36" fill="#009739" rx="2"/>
-      <polygon points="18,7 29,18 18,29 7,18" fill="#FEDD00"/>
-      <circle cx="18" cy="18" r="5.5" fill="#002776"/>
-      <rect x="16" y="11" width="4" height="14" fill="#FFF" opacity=".15" transform="rotate(-20 18 18)"/>
+      <polygon points="18,5 31,18 18,31 5,18" fill="#FEDD00"/>
+      <circle cx="18" cy="18" r="6.5" fill="#002776"/>
+      <path d="M11 18 Q18 14 25 18" stroke="#FFF" stroke-width="2.2" fill="none"/>
+      <circle cx="15.5" cy="16.5" r="1" fill="#FFF" opacity=".8"/>
+      <circle cx="19.5" cy="15.5" r=".7" fill="#FFF" opacity=".6"/>
+      <circle cx="22" cy="17" r=".5" fill="#FFF" opacity=".5"/>
+      <circle cx="13" cy="18.5" r=".5" fill="#FFF" opacity=".5"/>
     </svg>
   ),
   'en-US': (
